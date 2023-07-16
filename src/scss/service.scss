@@ -1,0 +1,140 @@
+
+.page {
+		// .page__container
+		&__container {}
+}
+
+.page-2-column {
+  
+  @media (min-width:$tablet){
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+    grid-template-columns: 255px 1fr;
+  }
+
+  // .page-2-column__sidebar
+  &__sidebar {
+
+  }
+  // .page-2-column__article
+  &__article {
+    border-bottom: 1px solid #DADDE0;
+    padding-bottom: 34px;
+  }
+}
+
+
+
+.service-nav {
+  // @media (max-width:$tablet){
+  //   max-width: 360px;
+
+  // }
+  padding-bottom: 15px;
+  @media (min-width:$mobile){
+    width: 50%;
+    margin: auto;
+    padding-bottom: 30px;
+  }
+  @media (min-width:$tablet){
+    width: 100%; 
+  }
+  
+  // .service-nav__spoller
+
+  &__spoller {
+    @media (max-width: $tablet) {
+      font-size: 1.8rem;
+      padding: 15px;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+
+      &::before {
+        display: block;
+        font-size: 10px;
+        transition: all 0.3s ease 0s;
+      }
+
+      &._spoller-active {
+        &::before {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+
+    @media (min-width:$tablet){
+      display: none; 
+    }
+  }
+
+  // .service-nav__list
+
+  &__list {
+    @media (min-width:$tablet){
+      border-right: 1px solid #DADDE0;
+    }
+    
+  }
+
+  // .service-nav__item
+  &__item {}
+
+  // .service-nav__link
+  &__link {
+    display: block;
+    padding: 8px 17px;
+
+    &_active {
+      background-color: var(--color-light-gray);
+      border-radius: 5px;
+      @media (min-width:$tablet){
+        border-radius: 5px 0px 0px 5px;
+      }
+    }
+  }
+}
+
+
+
+
+.mb-of-interest {
+  padding-top: 72px;
+  // .mb-of-interest__container
+
+  &__container {}
+
+  &__title {
+    text-align: center;
+    margin-bottom: 41px;
+  }
+  // .mb-of-interest__slider-wrapper
+
+  &__slider-wrapper {}
+
+  // .mb-of-interest__slider
+
+  &__slider {}
+
+  // .mb-of-interest__swiper
+
+  &__swiper {
+    display: flex;
+  }
+
+  // .mb-of-interest__slide
+
+  &__slide {}
+
+  // .mb-of-interest__item
+
+  &__item {}
+
+  // .mb-of-interest__navigation
+
+  &__navigation {}
+}
+
