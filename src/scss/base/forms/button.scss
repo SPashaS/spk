@@ -27,10 +27,12 @@
 				background-color: var(--accent-color);
 			}
 		}
-		&-big {
+		&-shadow {
 			font-weight: 600;
 			text-transform: uppercase;
-			
+			box-shadow: var(--shadow-block-hover);
+		}
+		&-big {
 			@media (min-width:$mobileSmall){
 				min-width: 350px;
 				min-height: 74px;

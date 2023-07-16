@@ -42,7 +42,7 @@
   background-color: var(--light-color-opacity);
   padding: 15px;
   min-width: 100%;
-
+  text-align: center;
   @media (min-width:$mobile) {
     min-width: 475px;
     padding: 27px 18px 33px;
@@ -203,7 +203,7 @@
 
   &__text {
     margin-bottom: 30px;
-
+    text-align: center;
     @media (min-width:$tablet) {
       margin-bottom: 70px;
     }
@@ -244,7 +244,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 15px;
-
+  text-align: center;
   @media (min-width:$tablet) {
     row-gap: 30px;
   }
@@ -378,6 +378,7 @@
 
   // .gallery__link
   &__link {
+    display: inline-block;
     &_absolute {
       position: absolute;
       top: 0;
@@ -423,7 +424,7 @@
   // .certificates__slide
 
   &__slide-img {
-    box-shadow: var(--shadow-block);
+    // box-shadow: var(--shadow-block);
     width: 260px;
 
     // height: 417px;
@@ -487,6 +488,7 @@
   background: #FFF;
   padding: 26px 13px 13px;
   text-align: left;
+  transition: all 0.3s ease 0s;
 
   @media (hover: hover) {
     &:hover {
