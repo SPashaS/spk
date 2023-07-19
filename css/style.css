@@ -573,6 +573,9 @@ h3 {
   margin-bottom: 17px;
   width: 100%;
 }
+.text-block__image img {
+  width: 100%;
+}
 @media (min-width: 479.98px) {
   .text-block__image {
     max-width: 350px;
