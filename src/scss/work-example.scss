@@ -1,11 +1,13 @@
 .wrapper {}
 
-.page {}
+.page {
+  &_our-work {
+    padding-bottom: 22px;
+  }
+}
 
 .page-top {
-  margin-top: 15px;
-  border-top: 1px solid #DADDE0;
-  padding-top: 15px;
+  
   // .page-top__container
 
   &__container {}
@@ -13,7 +15,11 @@
   // .page-top__breadcrumbs
 
   &__breadcrumbs {
-    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border-top: 1px solid #DADDE0;
+    padding-top: 15px;
+    font-size: 1.2rem;
   }
   // .page-top__body
   &__body {
@@ -25,7 +31,7 @@
   &__body-header {
     padding-bottom: 20px;
     @media (min-width:$tablet){
-      padding-bottom: 35px;
+      padding-bottom: 29px;
     }
     
   }
@@ -34,7 +40,7 @@
 
   &__title {
     &:not(:last-child) {
-      margin-bottom: 12px;
+      margin-bottom: 5px;
     }
   }
 
@@ -110,23 +116,4 @@
 			color: var(--accent-color);
     }
   }
-}
-
-.our-work {
-
-  // .our-work__container
-
-  &__container {}
-
-  // .our-work__title
-
-  &__title {}
-
-  // .our-work__gallery
-
-  &__gallery {}
-
-  // .our-work__button
-
-  &__button {}
 }

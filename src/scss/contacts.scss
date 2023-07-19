@@ -18,7 +18,7 @@
 }
 
 .map-block {
-
+  padding-top: 7px;
   // .map-block__container
 
   &__container {}
@@ -65,22 +65,25 @@
   padding: 15px 20px 25px;
   text-align: center;
   @media (min-width:$mobileSmall){
-    padding: 25px 50px 35px;
+    padding: 19px 50px 35px;
   }
   // .contacts-block__title
 
   &__title {
-    margin-bottom: 15px;
+    margin-bottom: 7px;
   }
 
   &__subtitle {
-    margin-bottom: 7px;
     opacity: 0.7;
+    margin-bottom: 5px;
   }
   // .contacts-block__phones
   &__phones {
     display: grid;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
+    .phone-number:nth-child(2) {
+      margin-bottom: 10px;
+    }
   }
 
   // .contacts-block__adress
@@ -91,7 +94,9 @@
 
   // .contacts-block__text
 
-  &__text {}
+  &__text {
+    margin-bottom: 12px;
+  }
 
   // .contacts-block__bus-info
 
@@ -144,7 +149,7 @@
       padding: 45px 60px;
     }
     @media (min-width:$tablet){
-      padding: 75px 90px;
+      padding: 70px 90px 87px;
     }
   }
 
@@ -160,14 +165,14 @@
   // .request-a-call__title
 
   &__title {
-    margin-bottom: 40px;
+    margin-bottom: 33px;
   }
 
   // .request-a-call__form
 
   &__form {
     &:not(:last-child) {
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
   }
 
@@ -197,7 +202,6 @@
   }
 
   // .form-request-a-call__button
-
   &__button {
     display: inline-block;
   }

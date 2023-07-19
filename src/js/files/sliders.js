@@ -67,7 +67,7 @@ function initSliders() {
 			speed: 800,
 			//touchRatio: 0,
 			//simulateTouch: false,
-			loop: true,
+			// loop: true,
 			//preloadImages: false,
 			//lazy: true,
 			// Dotts
@@ -125,7 +125,7 @@ function initSliders() {
 			spaceBetween: 0,
 			// autoHeight: true,
 			speed: 800,
-			loop: true,
+			// loop: true,
 			//touchRatio: 0,
 			//simulateTouch: false,
 			// loop: true,
@@ -161,6 +161,7 @@ function initSliders() {
 				},
 				1330: {
 					slidesPerView: 4,
+					spaceBetween: 21,
 				},
 			},
 			on: {
@@ -188,7 +189,7 @@ function initSliders() {
 			spaceBetween: 0,
 			// autoHeight: true,
 			speed: 800,
-			loop: true,
+			// loop: true,
 			//touchRatio: 0,
 			//simulateTouch: false,
 			// loop: true,
@@ -252,7 +253,7 @@ function initSliders() {
 			spaceBetween: 0,
 			// autoHeight: true,
 			speed: 800,
-			loop: true,
+			// loop: true,
 			//touchRatio: 0,
 			//simulateTouch: false,
 			// loop: true,

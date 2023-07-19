@@ -50,11 +50,11 @@
 									<div class="contacts-block__text-big">№ 1, 6, 8</div>
 								</div>
 								<ul class="contacts-block__socials">
-									<a href="#" class="ico ico_c-whatsapp ico_big"></a>
-									<a href="#" class="ico ico_c-telegram ico_big"></a>
-									<a href="#" class="ico ico_c-ok ico_big"></a>
-									<a href="#" class="ico ico_c-vk ico_big"></a>
-									<a href="#" class="ico ico_c-youtube ico_big"></a>
+									<a href="#" class="ico ico_c-whatsapp ico_big" aria-label="Whatsapp"></a>
+									<a href="#" class="ico ico_c-telegram ico_big" aria-label="Telegram"></a>
+									<a href="#" class="ico ico_c-ok ico_big" aria-label="Ok"></a>
+									<a href="#" class="ico ico_c-vk ico_big" aria-label="Vk"></a>
+									<a href="#" class="ico ico_c-youtube ico_big" aria-label="Youtube"></a>
 								</ul>
 							</div>
 						</div>
@@ -70,7 +70,7 @@
 								<form class="request-a-call__form form-request-a-call" action="#">
 									<input class="form-request-a-call__input" type="text" placeholder="Ваше имя" >
 									<input class="form-request-a-call__input" type="text" placeholder="Номер телефона" >
-									<button class="form-request-a-call__button button button_colored">Отправить</button>
+									<button class="form-request-a-call__button button button_colored button_colored-shadow">Отправить</button>
 								</form>
 								<p class="request-a-call__text">Нажимая на кнопку «Оставить заявку», вы даёте согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности</p>
 							</div>
@@ -83,7 +83,6 @@
 			@@include('html/_footer.htm',{})
 			<script src="https://api-maps.yandex.ru/2.1/?apikey=584eb019-088e-4cab-91ad-73a616810646&lang=ru_RU"></script>
 		</div>
-		@@include('html/_popup.htm',{})
 		@@include('html/_js.htm',{})
 	</body>
 </html>

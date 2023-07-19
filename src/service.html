@@ -38,9 +38,8 @@
 
 			<div class="page__container">
 				<div class="page-2-column">
-					<aside class="page-2-column__sidebar" data-spollers="991.98,max" data-one-spoller>
+					<aside class="page-2-column__sidebar">
 						<div class="service-nav">
-							<div class="service-nav__spoller _icon-arrow-bm" data-spoller>Наши работы</div>
 							<ul class="service-nav__list">
 								<li class="service-nav__item"><a class="service-nav__link" href="#">Газификация</a></li>
 								<li class="service-nav__item"><a class="service-nav__link service-nav__link_active" href="#">Геодезические работы </a></li>
@@ -59,7 +58,10 @@
 					<article class="page-2-column__article">
 						<div>
 							<div class="text-block">
-								<img class="text-block__image img-shadow " src="@img/our-services/1.jpg" alt="Image">
+								<div class="text-block__image img-shadow">
+									<img src="@img/our-services/1.jpg" alt="Image">
+								</div>
+								
 								<p>
 									Проектировщики определяют целесообразность реализации того или иного плана, застройщики корректируют
 									качество работы строительной
@@ -436,7 +438,6 @@
 		</main>
 		@@include('html/_footer.htm',{})
 	</div>
-	@@include('html/_popup.htm',{})
 	@@include('html/_js.htm',{})
 </body>
 

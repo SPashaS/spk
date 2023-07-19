@@ -1,6 +1,6 @@
 .page {
   &_service {
-    padding-bottom: 50px;
+    padding-bottom: 63px;
   }
 
   // .page__container
@@ -35,11 +35,11 @@
   // }
   padding-bottom: 15px;
 
-  @media (min-width:$mobile) {
-    width: 50%;
-    margin: auto;
-    padding-bottom: 30px;
-  }
+  // @media (min-width:$mobile) {
+  //   width: 50%;
+  //   margin: auto;
+  //   padding-bottom: 30px;
+  // }
 
   @media (min-width:$tablet) {
     width: 100%;
@@ -47,41 +47,45 @@
 
   // .service-nav__spoller
 
-  &__spoller {
-    @media (max-width: $tablet) {
-      font-size: 1.8rem;
-      padding: 15px;
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-between;
-      align-items: center;
+  // &__spoller {
+  //   @media (max-width: $tablet) {
+  //     font-size: 1.8rem;
+  //     padding: 15px;
+  //     display: flex;
+  //     flex-direction: row-reverse;
+  //     justify-content: space-between;
+  //     align-items: center;
 
-      &::before {
-        display: block;
-        font-size: 10px;
-        transition: all 0.3s ease 0s;
-      }
+  //     // &::before {
+  //     //   display: block;
+  //     //   font-size: 10px;
+  //     //   transition: all 0.3s ease 0s;
+  //     // }
 
-      &._spoller-active {
-        &::before {
-          transform: rotate(180deg);
-        }
-      }
-    }
+  //     // &._spoller-active {
+  //     //   &::before {
+  //     //     transform: rotate(180deg);
+  //     //   }
+  //     // }
+  //   }
 
 
-    @media (min-width:$tablet) {
-      display: none;
-    }
-  }
+  //   @media (min-width:$tablet) {
+  //     display: none;
+  //   }
+  // }
 
   // .service-nav__list
 
   &__list {
+    @media (max-width:$tablet){
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
     @media (min-width:$tablet) {
       border-right: 1px solid #DADDE0;
     }
-
   }
 
   // .service-nav__item
@@ -107,7 +111,7 @@
 
 
 .mb-of-interest {
-  padding-top: 72px;
+  padding-top: 59px;
   // .mb-of-interest__container
 
   &__container {}
@@ -140,6 +144,10 @@
   &__item {}
 
   // .mb-of-interest__navigation
-
-  &__navigation {}
+  &__navigation {
+    @media (min-width: 1415px) {
+      margin: 0 -21px;
+    }
+    
+  }
 }
