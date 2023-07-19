@@ -6152,9 +6152,9 @@
       },
       je = document.querySelectorAll("[data-gallery]");
     if (je.length) {
-      let We = [];
+      let t = [];
       je.forEach((e) => {
-        We.push({
+        t.push({
           gallery: e,
           galleryClass: $e(e, {
             selector: ".gallery__link",
@@ -6164,7 +6164,7 @@
           }),
         });
       }),
-        (e.gallery = We);
+        (e.gallery = t);
     }
     function Re(e) {
       this.type = e;
@@ -6278,29 +6278,8 @@
                 : t.breakpoint - e.breakpoint;
             });
       });
-    new Re("max").init();
-    if (document.getElementById("map")) {
-      let qe = [55.79956456550331, 37.767582319465596];
-      function Ye() {
-        let e = new ymaps.Map("map", {
-            center: [55.79835594059611, 37.76396046599078],
-            zoom: 16,
-          }),
-          t = new ymaps.Placemark(
-            qe,
-            {},
-            { iconImageSize: [80, 80], iconImageOffset: [-40, -70] }
-          );
-        e.controls.remove("geolocationControl"),
-          e.controls.remove("searchControl"),
-          e.controls.remove("trafficControl"),
-          e.controls.remove("typeSelector"),
-          e.controls.remove("fullscreenControl"),
-          e.geoObjects.add(t);
-      }
-      ymaps.ready(Ye);
-    }
-    (window.FLS = !0),
+    new Re("max").init(),
+      (window.FLS = !0),
       (function (e) {
         let t = new Image();
         (t.onload = t.onerror =

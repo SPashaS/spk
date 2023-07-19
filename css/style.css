@@ -1521,6 +1521,7 @@ h3 {
 }
 .certificates__slide-img {
   width: 260px;
+  height: 350px;
 }
 @media (min-width: 991.98px) {
   .certificates__slide-img {
