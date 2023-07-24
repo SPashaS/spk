@@ -5,11 +5,9 @@
 	<title>СПК - Геодезические работы</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<!-- <style>body{opacity: 0;}</style> -->
 	<meta name="description" content="Вектор ГАЗ">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230719204104">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230724155345">
 	<link rel="shortcut icon" href="favicon.ico">
-	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -87,7 +85,7 @@
 										<li class="menu__sub-list-item"><a href="#">Контакты</a></li>
 									</ul>
 								</li>
-								<li class="menu__item">
+								<li class="menu__item menu__item_active">
 									<a href="#" class="menu__link">Лаборатория</a>
 								</li>
 								<li class="menu__item menu__item_has-children">
@@ -163,16 +161,35 @@
 			<div class="page__container">
 				<div class="page-2-column">
 					<aside class="page-2-column__sidebar">
-						<div class="service-nav">
+						<div class="service-nav" data-spollers="992,max">
+							<div class="service-nav__spoller _icon-arrow-bm" data-spoller>Каталог</div>
 							<ul class="service-nav__list">
 								<li class="service-nav__item"><a class="service-nav__link" href="#">Газификация</a></li>
-								<li class="service-nav__item"><a class="service-nav__link service-nav__link_active" href="#">Геодезические работы </a></li>
+								<li class="service-nav__item service-nav__item_active"><a class="service-nav__link" href="#">Геодезические работы </a></li>
 								<li class="service-nav__item"><a class="service-nav__link" href="#">Метод продавливания </a></li>
-								<li class="service-nav__item"><a class="service-nav__link" href="#">Экскаваторы</a></li>
+								<li class="service-nav__item service-nav__item_has-children">
+									<a class="service-nav__link" href="#" data-spoller>Экскаваторы</a>
+									<ul class="service-nav__sublist">
+										<li class="service-nav__item"><a href="#">Манипуляторы</a></li>
+										<li class="service-nav__item"><a href="#">Газификация</a></li>
+										<li class="service-nav__item"><a href="#">Геодезические работы </a></li>
+										<li class="service-nav__item"><a href="#">Метод продавливания </a></li>
+										<li class="service-nav__item"><a href="#">Экскаваторы</a></li>
+									</ul>
+								</li>
 								<li class="service-nav__item"><a class="service-nav__link" href="#">Манипуляторы</a></li>
 								<li class="service-nav__item"><a class="service-nav__link" href="#">Газификация</a></li>
 								<li class="service-nav__item"><a class="service-nav__link" href="#">Геодезические работы </a></li>
-								<li class="service-nav__item"><a class="service-nav__link" href="#">Метод продавливания </a></li>
+								<li class="service-nav__item service-nav__item_has-children">
+									<a class="service-nav__link" href="#" data-spoller>Метод продавливания</a>
+									<ul class="service-nav__sublist">
+										<li class="service-nav__item"><a href="#">Манипуляторы</a></li>
+										<li class="service-nav__item"><a href="#">Газификация</a></li>
+										<li class="service-nav__item"><a href="#">Геодезические работы </a></li>
+										<li class="service-nav__item"><a href="#">Метод продавливания </a></li>
+										<li class="service-nav__item"><a href="#">Экскаваторы</a></li>
+									</ul>
+								</li>
 								<li class="service-nav__item"><a class="service-nav__link" href="#">Экскаваторы</a></li>
 								<li class="service-nav__item"><a class="service-nav__link" href="#">Манипуляторы</a></li>
 							</ul>
@@ -626,7 +643,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230719204104"></script>
+	<script src="js/app.min.js?_v=20230724155345"></script>
 </body>
 
 </html>
