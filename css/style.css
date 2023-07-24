@@ -899,6 +899,7 @@ h3 {
 @media (max-width: 991.98px) {
   .menu__list {
     position: absolute;
+    z-index: 5;
     left: 0;
     top: 100%;
     transform: translateY(25px);
